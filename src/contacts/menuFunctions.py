@@ -1,5 +1,5 @@
 from storage import contacts
-from utils import clean
+
 
 def addContact():
     print("\n --- Añadir contacto ---")
@@ -19,7 +19,10 @@ def viewContacts():
     print("\n --- Mostrar todos los contactos ---")
     if contacts:
         for name, info in contacts.items():
-            print(f"Nombre: {name}, Teléfono: {info['teléfono']}, Email: {info['email']}, Dirección: {info['dirección']}")
+            print(
+                f"Nombre: {name}| Teléfono: {info['teléfono']}| "
+                f"Email: {info['email']}| Dirección: {info['dirección']}"
+            )
     else:
         print("No hay contactos guardados")
     print("\n --- Fin de la lista ---")

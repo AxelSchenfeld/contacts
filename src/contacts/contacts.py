@@ -1,5 +1,4 @@
-from menuFunctions import addContact, viewContacts, searchContact, editContact, deleteContact
-from utils import clean
+from menuFunctions import addContact, deleteContact, editContact, searchContact, viewContacts
 
 
 def menu():
@@ -16,7 +15,6 @@ def main():
     while True:
         option = menu()
         if option == "1":
-            clean()
             addContact()
         elif option == "2":
             searchContact()
